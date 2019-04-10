@@ -1,12 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>小林个人博客</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: normal;
+			color: #5e5e5e;
+			font-size: 14px;
+			position: relative;
+			background: #f9f9f9;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #1b222d;
+			font-weight: normal;
+		}
+
+		body h2 a,
+		body h3 a,
+		body h4 a,
+		body h5 a,
+		body h6 a {
+			color: #1b222d;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		body a {
+			text-decoration: none;
+			display: inline-block;
+			color: #5e5e5e;
+		}
+
+		a:hover,
+		a:focus,
+		a:visited {
+			text-decoration: none;
+			outline: none;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+		}
+
+		body a:hover {
+			color: #8eb1eb;
+		}
+
+		img:hover {
+			opacity: 0.8;
+			-webkit-transform: scale3D(1.1, 1.1, 1);
+			-moz-transform: scale3D(1.1, 1.1, 1);
+			-ms-transform: scale3D(1.1, 1.1, 1);
+			-o-transform: scale3D(1.1, 1.1, 1);
+			transform: scale3D(1.1, 1.1, 1);
+		}
+
+		img {
+			-webkit-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+		}
+
+		.content {
+			width: 1000px;
+			height: auto;
+			margin: 0 auto;
+		}
+
+		.content .list-left {
+
+			line-height: 30px;
+			float: left;
+		}
+
+		.content .list-right {
+			float: right;
+		}
+
+		.top-header a {
+			line-height: 35px;
+		}
+
+		.top-header li {
+			display: inline-block;
+			line-height: 35px;
+		}
+
+		.top-header a {
+			font-size: 15px;
+			margin-left: 15px;
+		}
+
+		.top-header {
+			height: 30px;
+			width: 100%;
+			margin: 0 auto;
+			border-bottom: 1px solid #8eb1eb;
+		}
+
+		.theme-main-header {
+			padding: 50px 0 40px 0;
+		}
+
+		.theme-main-header .content-holder {
+			position: relative;
+		}
+
+		.theme-main-header .content-holder .logo {
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		.theme-main-header #menu-holder {
+			width: 350px;
+			margin: 10px auto;
+			text-align: center;
+		}
+
+		.theme-main-header #menu-holder li {
+			float: left;
+			margin-left: 50px;
+		}
+
+		.Main-Banner {
+			background: #1b222d;
+			margin-top: 20px;
+		}
+
+		.container .text-left {
+			width: 600px;
+			float: left;
+		}
+
+		.container .text-right {
+			width: 300px;
+			margin: 15px 35px 15px 45px;
+			float: right;
+		}
+
+		.text-left h2 {
+			text-align: center;
+			background: #5e5e5e;
+			color: #fff;
+		}
+
+		.image-box {
+			width: 600px;
+			height: 300px;
+			margin: 10px auto;
+			overflow: hidden;
+		}
+
+		.a1 {
+			margin: 30px auto;
+			background: #fff;
+		}
+
+		.a1 .title {
+			float: right;
+			margin-right: 10px;
+		}
+
+		.a1 .tag {
+			font-size: 16px;
+			margin: 20px 0 10px 0;
+		}
+
+		.a1 .l {
+			margin: 10px 0;
+		}
+
+		.a1 .l li {
+			float: left;
+			margin-right: 20px;
+		}
+
+		.a1 p {
+			line-height: 30px;
+			text-indent: 2em;
+			margin: 10px auto;
+			padding: 20px 5px;
+			text-align: justify;
+			clear: both;
+		}
+
+		.text-right h2 {
+			text-align: center;
+			background: #1b222d;
+			color: #fff;
+		}
+
+		.image-box2 {
+			width: 300px;
+			height: auto;
+			margin: 10px auto;
+			overflow: hidden;
+		}
+
+		.about-me {
+			background: #fff;
+		}
+
+		.about-me p {
+			line-height: 30px;
+			text-align: justify;
+			text-indent: 2em;
+			margin: 10px;
+			clear: both;
+		}
+
+		.about-me .more {
+			margin-left: 220px;
+		}
+
+		.weather {
+			margin: 30px auto;
+			background:#fff;
+		}
+		.weather h2{
+			margin: 30px auto;
+			background:#1b222d;
+			color: #fff;
+		}
+		.weather li{
+
+			margin:0 10px;
+		}
+
+
+		.theme-footer {
+			clear: both;
+			text-align: center;
+			background: #fff;
+			padding: 60px 0 20px 0;
+			margin-top: 100px;
+		}
+
+		.theme-footer .footer-text {
+			font-size: 11px;
+			letter-spacing: 0.4px;
+			text-transform: uppercase;
+			padding: 5px 0 25px 0;
+		}
+
+		.theme-footer ul li {
+			display: inline-block;
+		}
+
+		.theme-footer ul li a {
+			font-size: 15px;
+			margin: 0 12px;
+		}
+
+		.theme-footer .copyright {
+			margin-top: 30px;
+			font-size: 13px;
+		}
+	</style>
 </head>
+
 <body>
-    <h1>hhh</h1>
+	<!-- 
+	=============================================
+		Top Header
+	============================================== 
+	-->
+	<div class="top-header">
+		<div class="content">
+			<div class="list-left">
+				<a href="#">人们所谓的怀疑和遗憾，追根到底还是不敢和不甘。</a>
+			</div>
+			<div class="list-right">
+				<ul>
+					<li class="icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li class="icon"><a href="#"><i class="fab fa-weibo"></i></a></li>
+					<li class="icon"><a href="https://user.qzone.qq.com/271749920/infocenter"><i
+								class="fab fa-qq"></i></a></li>
+					<li class="icon"><a href="#"><i class="fab fa-weixin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div> <!-- /.top-header -->
+	<!-- 
+	=============================================
+		Theme Header
+	============================================== 
+	-->
+	<header class="theme-main-header">
+		<div class="content-holder">
+			<div class="logo"><a href="index.html"><img src="images/logo/ljm.png" alt="ljm"></a></div>
+			<!-- ============== Menu Warpper ================ -->
+			<nav id="menu-holder">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#h2">ABOUT ME</a></li>
+					<li><a href="#h3">WEB ROAD</a></li>
+				</ul>
+			</nav> <!-- /#menu-holder -->
+		</div> <!-- /.content-holder -->
+	</header> <!-- /.theme-main-header -->
+
+	<!-- 
+	=============================================
+		Theme Main Banner
+	============================================== 
+	-->
+	<div class="content">
+		<div class="Main-Banner">
+			<div style="text-align:center;">
+				欢迎光临惹~
+			</div>
+			<img src="images/运动会播音.jpg" alt="me" width="100%">
+			<div style="text-align:center;">
+				就一点点帅，没有很帅~（滑稽）
+			</div>
+		</div> <!-- /.theme-banner-->
+	</div>
+	<!-- 
+	=============================================
+		Main Blog Post Wrapper
+	============================================== 
+	-->
+	<div class="container">
+		<div class="content">
+			<div class="text-left">
+				<div class="a1">
+					<h2 id="h2">我的Web之路</h2>
+					<div class="image-box"><img src="images/1.jpg" alt="1" width="100%"></div>
+					<div class="post-meta-box">
+						<h4 class="title"><a href="#"><i class="fas fa-angle-double-right"></i> 点击前往</a></h4>
+						<ul>
+							<li class="tag"><a href="#"><i class="fas fa-lightbulb"></i> 浙江省多媒体竞赛网站类</a></li>
+							<li class="date"><a href="#"><i class="far fa-clock"></i> 2018年12月</a></li>
+						</ul>
+
+						<ul class="l">
+							<li><a href="#"><i class="far fa-comments"></i> COMMENTS</a></li>
+							<li><a href="#"><i class="far fa-heart"></i> LIKES</a></li>
+							<li><a href="#"><i class="far fa-share-square"></i> SHARE</a></li>
+						</ul>
+						<p>说出来您可能不信，作为一个计算机小白偶然间进入了计算机专业，而接触前端也是一次偶然——学姐邀请我参加他们的团队，我虽然在全程划水，不过也开始对web的知识感兴趣了。这可能就是出道即“巅峰”吧，这是我第一次接触web有关的东西，不过我知道我要学习的东西还有很多，希望有一天能凭我自己的力量登上宝座23333。
+						</p>
+					</div> <!-- /.post-meta-box -->
+				</div>
+				<div class="a1">
+
+					<div class="image-box"><img src="images/2.png" alt="1"></div>
+					<div class="post-meta-box">
+						<h4 class="title"><a href="https://www.imooc.com/learn/9"><i
+									class="fas fa-angle-double-right"></i> 点击前往</a></h4>
+						<ul>
+							<li class="tag"><a href="#"><i class="fas fa-lightbulb"></i> web寒假作业</a></li>
+							<li class="date"><a href="#"><i class="far fa-clock"></i> 2019年1月</a></li>
+						</ul>
+
+						<ul class="l">
+							<li><a href="#"><i class="far fa-comments"></i> COMMENTS</a></li>
+							<li><a href="#"><i class="far fa-heart"></i> LIKES</a></li>
+							<li><a href="#"><i class="far fa-share-square"></i> SHARE</a></li>
+						</ul>
+						<p>这门课还没开始正式的学习，就给我们一个下马威，每天两个小时的寒假自学作业，让我们的寒假生活无比充实~
+						</p>
+					</div> <!-- /.post-meta-box -->
+				</div>
+				<div class="a1">
+
+					<div class="image-box"><img src="images/3.png" alt="1"></div>
+					<div class="post-meta-box">
+						<h4 class="title"><a
+								href="http://elearning.usx.edu.cn/portal/site/ad8f969c-d3c1-4bbd-be91-14a6e8b4b053/tool/785e36af-b3f3-42ac-9532-0afc36623677"><i
+									class="fas fa-angle-double-right"></i> 点击前往</a></h4>
+						<ul>
+							<li class="tag"><a href="#"><i class="fas fa-lightbulb"></i> web课程与学习</a></li>
+							<li class="date"><a href="#"><i class="far fa-clock"></i> 2019年2月</a></li>
+						</ul>
+
+						<ul class="l">
+							<li><a href="#"><i class="far fa-comments"></i> COMMENTS</a></li>
+							<li><a href="#"><i class="far fa-heart"></i> LIKES</a></li>
+							<li><a href="#"><i class="far fa-share-square"></i> SHARE</a></li>
+						</ul>
+						<p>
+							没错，伴随着开学，我们的“噩梦”终于开始了，三天小作业一星期大作业的学习，痛苦并快乐着QAQ
+						</p>
+					</div> <!-- /.post-meta-box -->
+				</div>
+				<div class="a1">
+
+					<div class="image-box"><img src="images/4.png" alt="1"></div>
+					<div class="post-meta-box">
+						<h4 class="title"><a
+								href="http://106.14.209.83/16136119/17145116%E6%9E%97%E6%B4%A5%E6%B0%91%E5%AE%9E%E9%AA%8C%E4%B8%80/index.html"><i
+									class="fas fa-angle-double-right"></i> 点击前往</a></h4>
+						<ul>
+							<li class="tag"><a href="#"><i class="fas fa-lightbulb"></i> 实验一</a></li>
+							<li class="date"><a href="#"><i class="far fa-clock"></i> 2019年3月</a></li>
+						</ul>
+
+						<ul class="l">
+							<li><a href="#"><i class="far fa-comments"></i> COMMENTS</a></li>
+							<li><a href="#"><i class="far fa-heart"></i> LIKES</a></li>
+							<li><a href="#"><i class="far fa-share-square"></i> SHARE</a></li>
+						</ul>
+						<p>没想到只学习了几个星期的菜鸟们，已经迎来了第一个由自己设计制作的网页的实验，一开始确实无从下手，在辗转反侧了一个星期后，终于磨练出了自己的第一个网页。虽然很菜，不过毕竟号称文艺男子（hhh），凭借自己的照骗还是赢得了班级女生投票喜爱第一名（臭不要脸）。
+						</p>
+					</div> <!-- /.post-meta-box -->
+				</div>
+				<div class="a1">
+
+					<div class="image-box"><img src="images/5.png" alt="1"></div>
+					<div class="post-meta-box">
+						<h4 class="title"><a
+								href="http://106.14.209.83/16136119/%E5%AE%9E%E9%AA%8C2/%E5%AE%9E%E9%AA%8C2-3.html"><i
+									class="fas fa-angle-double-right"></i> 点击前往</a></h4>
+						<ul>
+							<li class="tag"><a href="#"><i class="fas fa-lightbulb"></i> 实验二</a></li>
+							<li class="date"><a href="#"><i class="far fa-clock"></i> 2019年3月</a></li>
+						</ul>
+
+						<ul class="l">
+							<li><a href="#"><i class="far fa-comments"></i> COMMENTS</a></li>
+							<li><a href="#"><i class="far fa-heart"></i> LIKES</a></li>
+							<li><a href="#"><i class="far fa-share-square"></i> SHARE</a></li>
+						</ul>
+						<p>
+							没想到在老师的“威逼利诱”下，仅仅一个月大家就掌握了html和css的基础知识了，当然也迎来了我们的实验二......
+						</p>
+					</div> <!-- /.post-meta-box -->
+				</div>
+				<div class="a1">
+
+					<div class="image-box"><img src="images/6.png" alt="1"></div>
+					<div class="post-meta-box">
+						<h4 class="title"><a href="https://www.imooc.com/learn/147"><i
+									class="fas fa-angle-double-right"></i> 点击前往</a></h4>
+						<ul>
+							<li class="tag"><a href="#"><i class="fas fa-lightbulb"></i> 网站综合布局</a></li>
+							<li class="date"><a href="#"><i class="far fa-clock"></i> 2019年4月</a></li>
+						</ul>
+
+						<ul class="l">
+							<li><a href="#"><i class="far fa-comments"></i> COMMENTS</a></li>
+							<li><a href="#"><i class="far fa-heart"></i> LIKES</a></li>
+							<li><a href="#"><i class="far fa-share-square"></i> SHARE</a></li>
+						</ul>
+						<p>
+							在完成老师布置作业的同时，在有空的时候也会展开双线程，学习一些额外的知识，比如说综合布局，以及接下去的js内容。
+						</p>
+					</div> <!-- /.post-meta-box -->
+				</div>
+				<div class="a1">
+
+					<div class="image-box"><img src="images/7.png" alt="1"></div>
+					<div class="post-meta-box">
+						<h4 class="title"><a href="https://www.imooc.com/learn/36"><i
+									class="fas fa-angle-double-right"></i> 点击前往</a></h4>
+						<ul>
+							<li class="tag"><a href="#"><i class="fas fa-lightbulb"></i> 实验二</a></li>
+							<li class="date"><a href="#"><i class="far fa-clock"></i> 2019年3月</a></li>
+						</ul>
+
+						<ul class="l">
+							<li><a href="#"><i class="far fa-comments"></i> COMMENTS</a></li>
+							<li><a href="#"><i class="far fa-heart"></i> LIKES</a></li>
+							<li><a href="#"><i class="far fa-share-square"></i> SHARE</a></li>
+						</ul>
+						<p>
+							时间过得很快，马上迎来了js的学习，这一块相对来说难度有所提升，加上最近时间很紧张，每晚只能“加班”到一两点，说多了都是泪啊~
+						</p>
+					</div> <!-- /.post-meta-box -->
+				</div>
+				<div class="a1">
+					<div style="text-align:center;">
+						未完待续......
+					</div>
+				</div>
+			</div>
+			<div class="text-right">
+				<div class="about-me">
+					<div class="image-box2">
+						<img src="images/me3.jpg" alt="me">
+					</div>
+					<h2 class="title" id="h3">About me</h2>
+					<p>Hi!大家好呀。我叫林津民，浙江台州人，是绍兴大学计算机系的一名学生。 好像每个人都会惊讶，一个看上去富有文艺气息的我竟然是个理工男hhhh。</p>
+					<a class="more"
+						href="http://106.14.209.83/16136119/17145116%E6%9E%97%E6%B4%A5%E6%B0%91%E5%AE%9E%E9%AA%8C%E4%B8%80/index.html"><i
+							class="fas fa-angle-double-right"></i> 了解更多</a>
+
+				</div> <!-- /.about-me -->
+
+				<div class="weather">
+					<h2>所在地</h2>
+						<ul class="l">
+								<li><a href="http://106.14.209.83/16136119/17145116%E6%9E%97%E6%B4%A5%E6%B0%91%E5%AE%9E%E9%AA%8C%E4%B8%80/intro.html"><i class="far fa-heart"></i>  故乡：台州</a></li>
+								<br>
+								<li><a href="http://106.14.209.83/16136119/17145116%E6%9E%97%E6%B4%A5%E6%B0%91%E5%AE%9E%E9%AA%8C%E4%B8%80/intro.html"><i class="far fa-heart"></i> 所在地：绍兴</a></li>
+								<br>
+								<li><a href="#"><i class="far fa-heart"></i>  即时天气：<span id="weather"></span></a></li>
+							</ul>
+						
+					</div> <!-- /weather -->
+			</div>
+		</div>
+		
+		<script>
+			var request = new XMLHttpRequest();
+	
+			request.onreadystatechange = function () {
+				if (request.readyState === 4 && request.status === 200) {
+					debugger;
+					res = JSON.parse(request.responseText)["HeWeather6"][0]["now"];
+					tl = JSON.parse(request.responseText)["HeWeather6"][0]["now"]["fl"];
+					cond = JSON.parse(request.responseText)["HeWeather6"][0]["now"]["cond_txt"];
+					const PDOM = document.querySelector('#weather');
+					PDOM.innerHTML=`越城区天气 ${cond} 体感温度 ${tl}℃`;
+				}
+			}
+			// 发送请求:
+			request.open('GET', 'https://free-api.heweather.net/s6/weather/now?location=yuecheng&key=baa2e81586f7408cb9ef001251d8a70d');
+			request.send();
+		</script>
+
+
+
+		<!--
+	=====================================================
+		Footer
+	=====================================================
+	-->
+		<footer class="theme-footer">
+			<div class="container">
+				<div class="logo"><a href="index.html"><img src="images/logo/logo.png" alt=""></a></div>
+				<p class="footer-text">welcome to enjoy my blog</p>
+				<ul>
+					<li class="icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li class="icon"><a href="#"><i class="fab fa-weibo"></i></a></li>
+					<li class="icon"><a href="https://user.qzone.qq.com/271749920/infocenter"><i
+								class="fab fa-qq"></i></a></li>
+					<li class="icon"><a href="#"><i class="fab fa-weixin"></i></a></li>
+				</ul>
+				<p class="copyright">Copyright &copy; 2019.Company name All rights reserved.</p>
+			</div> <!-- /.container -->
+		</footer> <!-- /.theme-footer -->
+
+	</div>
 </body>
+
 </html>
