@@ -16,7 +16,7 @@
 			color: #5e5e5e;
 			font-size: 14px;
 			position: relative;
-			background: #f9f9f9;
+			background-color: #f9f9f9;
 		}
 
 		* {
@@ -235,16 +235,18 @@
 
 		.weather {
 			margin: 30px auto;
-			background:#fff;
+			background: #fff;
 		}
-		.weather h2{
+
+		.weather h2 {
 			margin: 30px auto;
-			background:#1b222d;
+			background: #1b222d;
 			color: #fff;
 		}
-		.weather li{
 
-			margin:0 10px;
+		.weather li {
+
+			margin: 0 10px;
 		}
 
 		.theme-footer {
@@ -275,6 +277,21 @@
 			margin-top: 30px;
 			font-size: 13px;
 		}
+
+		.search {
+			width: 100px;
+			height: 300px;
+			position: fixed;
+			right: 10px;
+			top: 30%;
+			color: #8eb1eb;
+			font-size: 16px;
+			background-color: #fff;
+			text-align: center;
+		}
+		.search li{
+margin: 10px 0;
+		}
 	</style>
 </head>
 
@@ -284,6 +301,16 @@
 		Top Header
 	============================================== 
 	-->
+	<div class="search">
+		<ul>
+			<li><a href="https://www.imooc.com/learn/9">初识HTML+CSS</a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+	</div>
 	<div class="top-header">
 		<div class="content">
 			<div class="list-left">
@@ -510,21 +537,25 @@
 
 				<div class="weather">
 					<h2>所在地</h2>
-						<ul class="l">
-								<li><a href="http://106.14.209.83/16136119/17145116%E6%9E%97%E6%B4%A5%E6%B0%91%E5%AE%9E%E9%AA%8C%E4%B8%80/intro.html"><i class="far fa-heart"></i>  故乡：台州</a></li>
-								<br>
-								<li><a href="http://106.14.209.83/16136119/17145116%E6%9E%97%E6%B4%A5%E6%B0%91%E5%AE%9E%E9%AA%8C%E4%B8%80/intro.html"><i class="far fa-heart"></i> 所在地：绍兴</a></li>
-								<br>
-								<li><a href="#"><i class="far fa-heart"></i>  即时天气：<span id="weather"></span></a></li>
-							</ul>
-						
-					</div> <!-- /weather -->
+					<ul class="l">
+						<li><a
+								href="http://106.14.209.83/16136119/17145116%E6%9E%97%E6%B4%A5%E6%B0%91%E5%AE%9E%E9%AA%8C%E4%B8%80/intro.html"><i
+									class="far fa-heart"></i> 故乡：台州</a></li>
+						<br>
+						<li><a
+								href="http://106.14.209.83/16136119/17145116%E6%9E%97%E6%B4%A5%E6%B0%91%E5%AE%9E%E9%AA%8C%E4%B8%80/intro.html"><i
+									class="far fa-heart"></i> 所在地：绍兴</a></li>
+						<br>
+						<li><a href="#"><i class="far fa-heart"></i> 即时天气：<span id="weather"></span></a></li>
+					</ul>
+
+				</div> <!-- /weather -->
 			</div>
 		</div>
-		
+
 		<script>
 			var request = new XMLHttpRequest();
-	
+
 			request.onreadystatechange = function () {
 				if (request.readyState === 4 && request.status === 200) {
 					debugger;
@@ -532,11 +563,12 @@
 					tl = JSON.parse(request.responseText)["HeWeather6"][0]["now"]["fl"];
 					cond = JSON.parse(request.responseText)["HeWeather6"][0]["now"]["cond_txt"];
 					const PDOM = document.querySelector('#weather');
-					PDOM.innerHTML=`越城区天气 ${cond} 体感温度 ${tl}℃`;
+					PDOM.innerHTML = `越城区天气 ${cond} 体感温度 ${tl}℃`;
 				}
 			}
 			// 发送请求:
-			request.open('GET', 'https://free-api.heweather.net/s6/weather/now?location=yuecheng&key=baa2e81586f7408cb9ef001251d8a70d');
+			request.open('GET',
+				'https://free-api.heweather.net/s6/weather/now?location=yuecheng&key=baa2e81586f7408cb9ef001251d8a70d');
 			request.send();
 		</script>
 
