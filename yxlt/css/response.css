@@ -1,0 +1,242 @@
+﻿@charset "utf-8";
+
+/****************************响应式**********************************/
+/* Desktop */
+@media (max-width: 1200px)
+{
+}
+/* iPad */
+@media (min-width: 991px) and (max-width: 1920px)
+{
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+	.navbar-default .navbar-nav > li > a
+	{
+        padding:16.5px 5px;
+		font-size: 12px;
+	}
+
+	.heng_box_news .newslist li .ri{
+        max-width:60px;
+	}
+    .Box .content_zhuying{
+       max-width: 442px;
+    }
+    .Box .content_pinpai{
+       max-width: 442px;
+    }
+}
+/* Tablets */
+@media (max-width: 767px)
+{
+	.hidden-sm
+	{
+		text-align: center;
+	}
+
+	.navbar-default .navbar-brand
+	{
+		padding-top: 15px;
+		padding-left: 15px;
+		width: 50%;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar
+	{
+		background-color: #704D33;
+	}
+
+	.navbar-default .navbar-toggle
+	{
+		border-color: #704D33;
+	}
+
+	.navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus
+	{
+		background: none;
+	}
+
+	.container-navbar .navbar-collapse
+	{
+		background: #191919;
+	}
+
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse
+	{
+		min-height: 310px;
+        position: fixed;
+        width: 100%;
+	}
+
+	.navbar-default
+	{
+		height: 65px;
+		border-bottom: 3px solid #704D33;
+	}
+
+	.navbar-default .navbar-toggle
+	{
+		margin-top: 13px;
+	}
+    .navbar-default .navbar-toggle.noborder {
+        border-color: #FDFAF6;
+    }
+    .navbar-default .navbar-toggle.mar0 {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .navbar-default .navbar-toggle-zdy .meanclose {
+        font-size: 18px;
+        color: #704D33;
+        padding: 0px 5px;
+    }
+	.navbar-default .navbar-nav
+	{
+		width: auto;
+	}
+
+	.navbar-default .navbar-nav > li
+	{
+		width: 100%;
+		background: none;
+	}
+
+	.navbar-default .navbar-nav > li > a
+	{
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		transition: all 0.5s;
+		animation-delay: 0s;
+		color: #FFFFFF;
+		padding: 5px;
+		font-size: 14px;
+		border-bottom: 1px solid #303030;
+	}
+
+	.navbar-default .navbar-nav > li:last-child > a
+	{
+		border-bottom: none;
+	}
+
+	.navbar-default .navbar-nav > li > a:focus
+	{
+		color: #FFFFFF;
+	}
+
+	.navbar-default .navbar-nav > .cur > a, .navbar-default .navbar-nav > .cur > a:focus, .navbar-default .navbar-nav > .cur > a:hover
+	{
+		color: #704D33;
+		background: #303030;
+		background-color: none;
+        border-color:#303030;
+	}
+
+	.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > .cur > a
+	{
+		color: #704D33;
+		background-color: #303030;
+		background: #303030;
+        border-color:#303030;
+	}
+
+	.navbar-nav
+	{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 0px 0px;
+	}
+
+	.nav-xs-fs
+	{
+		float: none;
+	}
+
+	.navbar-default .navbar-nav > li > ul li a
+	{
+		color: #FFFFFF;
+		border: none;
+	}
+
+	.navbar-default .navbar-nav > li > ul li a:hover,.navbar-default .navbar-nav > li > ul li.cur a
+	{
+		color: #704D33;
+	}
+
+	.heng_box .plan_com .c1_list .item
+	{
+		margin: 15px 0px;
+	}
+
+	.more_plan
+	{
+		padding-bottom: 20px;
+	}
+    .Box .Box_con_2 .conbox ul li .item .c1_desc{height:auto;}
+	.Box .Box_con_2 .conbox ul li{
+        width:320px; height:auto;margin-left: 0px;
+	}
+    .Box .Box_con .btnl{
+        left: -45px;
+    }
+    .Box .Box_con .btnr{
+        right: -45px;
+    }
+	.c1_detail
+	{
+		padding: 15px;
+	}
+    .c1_detail .itemS .content{
+      width:90%;
+    }
+    .plan_com_con .txt_tab div a{
+        font-size:12px;
+    }
+    .Box .content_zhuying{
+        max-width: 220px;
+    }
+     .Box .content_pinpai{
+       max-width: 220px;
+    }
+    .Box .Box_con_2 .conbox ul li{
+        width:270px;
+    }
+    .Box .Box_con_2 .conbox ul li .item .c1_titleText{
+        text-align:center;
+    }
+    .heng_box_demo .plan_com .c1_detail .item_C .c1_img{
+        text-align:center;
+    }
+     .heng_box_news .newslist li a{
+        text-align:center;
+	}
+    .heng_box_news .newslist li .ri{
+        max-width:80px;
+        width:24%;
+        padding-right:1%
+	}
+    .heng_box_news .newslist li .wen_nei{
+         width:75%;
+	}
+    /*.banner_re ul li .item_re .c1_img img{*/
+        /*width:40px;*/
+        /*height:40px;*/
+        /*margin-top:120%;*/
+    /*}*/
+    .banner_re ul li .item_re .c1_desc{
+        font-size:14px;
+		 max-height:80px;
+        overflow-y:hidden;
+    }
+    #tool{
+        display:block;
+    }
+	
+}
+/* Mobile phones */
+@media (max-width: 480px)
+{
+}
