@@ -64,15 +64,20 @@ width: 1000px;
     margin: 10px auto;
 }
 .ditub {
+    font-size: 14px;
     background-color: rgba(0, 0, 0, 0.7);
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     color: white;
 }
 .ditub2 {
+    font-size: 14px;
     background-color: rgba(0, 0, 0, 0.7);
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     color: white;
-    
 }
 .jinru{
     width: 64%;
