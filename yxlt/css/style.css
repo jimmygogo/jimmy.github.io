@@ -2008,7 +2008,37 @@ hr {
     width: 100%;
 
 }
+.heng_box_news .newslist li .ri {
 
+    display: inline-block;
+
+    width: 10%;
+
+    float: left;
+
+    font-family: "微软雅黑";
+
+    max-width: 80px;
+
+    color: #FFFFFF;
+
+    font-weight: normal;
+
+    text-align: center;
+
+    background: #705034;
+
+    -webkit-border-radius: 5px;
+
+    -moz-border-radius: 5px;
+
+    -ms-border-radius: 5px;
+
+    -o-border-radius: 5px;
+
+    border-radius: 5px;
+
+}
 .heng_box_news .newslist li .ri1 {
 
     display: inline-block;
