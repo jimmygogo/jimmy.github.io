@@ -30,9 +30,9 @@
 #login1 {
     display:none;
     width: 250px;
-    height: 120px;
+    height: 130px;
     text-align: center;
-    background: rgb(253, 186, 186);
+    background: #FBE9A9;
     position: fixed;
     top: 35%;
     right: 40%;
