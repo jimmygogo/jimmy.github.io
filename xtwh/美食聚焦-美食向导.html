@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Title here -->
+    <title>美食聚焦</title>
+    <!-- Description, Keywords and Author -->
+    <meta name="description" content="大泽仁艾" />
+    <meta name="keywords" content="大泽仁艾" />
+    <meta name="author" content="大泽仁艾" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/response.css" />
+    <!-- jQuery -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- Slider JS -->
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="js/Lunbo.js"></script>
+    <!-- Animation JS -->
+    <script type="text/javascript" src="js/scrollReveal.min.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body class="body_bg">
+    <!--头部开始-->
+    <div class="header">
+        <div class="header_topbg"></div>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-navbar row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle navbar-toggle-zdy" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="..."
+                                class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12 P0">
+                    <div class="collapse collapse-zdy navbar-collapse navbar-collapse-zdy navbar-responsive-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index.html">
+                                    <span class="cn">&nbsp;&nbsp;首页&nbsp;&nbsp;</span>
+                                    <span class="en">&nbsp;&nbsp;HOME&nbsp;&nbsp;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="文化风情.html">
+                                    <span class="cn">文化风情</span>
+                                    <span class="en">CULTURE</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="山水之间.html">
+                                    <span class="cn">山水之间</span>
+                                    <span class="en">SCENERY</span>
+                                </a>
+                            </li>
+                            <li class="cur">
+                                <a href="美食聚焦.html">
+                                    <span class="cn">美食聚焦</span>
+                                    <span class="en">DELICACY</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="乡土论坛.html">
+                                    <span class="cn">乡土论坛</span>
+                                    <span class="en">FORUM</span>
+                                </a>
+                            </li>
+                            <a id="login" href="#" class="navsp">注册/登录</a>
+                        </ul>
+                        <div class="search">
+                            <a href="" id="s"><i class="fas fa-search"></i></a>
+                            <input type="text" name="search" id="search">
+                        </div>
+                    </div>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+    <!--/头部结束-->
+    <div id="login1">
+            <p>登录</p>
+            <form action="#"><label for="name">账户：</label><input type="text" name="name" id="name"><br><label
+                    for="password">密码：</label><input type="password" name="password" id="password"></form>
+                    <input type="submit" value="登录" class="back">
+                    <input type="submit" value="返回" class="back">
+                   <a href="#" class="back">忘记密码？</a> 
+                   <br>
+        </div>
+        <script type="text/javascript">
+         $('#login').click(function(){
+           $('#login1').css("display","block");
+        })
+        $('.back').click(function(){
+           $('#login1').css("display","none");
+           alert("登录失败，您确定以游客身份继续吗？");
+        })
+        </script>
+    <!--banner-->
+    <div id="carousel-example-generic" class="carousel carousel-fade">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/美食.gif" class="img-responsive" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <!--/banner-->
+
+    <div class="plan_com_con MB15">
+        <div class="plan_com row txt_tab txt_tab_num4">
+
+            <div class="col-md-3 col-sm-3 col-xs-3"><a href="美食聚焦.html">人气推荐</a></div>
+            <div class="col-md-3 col-sm-3 col-xs-3"><a href="美食聚焦-美食向导.html" class="cur">美食向导</a></div>
+            <div class="col-md-3 col-sm-3 col-xs-3"><a href="美食聚焦-台州特产.html">台州特产</a></div>
+            <div class="col-md-3 col-sm-3 col-xs-3"><a href="美食聚焦-美食资讯.html">美食资讯</a></div>
+        </div>
+    </div>
+
+    <div class="heng_box">
+        <div class="plan_com clearfix">
+            <div class="container">
+                <div class="c1_detail">
+
+                    <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                        <h4 id="2">每日餐馆</h4>
+                        <div class="en">RECOMMEND</div>
+                    </div>
+                    <div>
+                        <img src="images/店1.gif" alt="1" width="100%">
+                    </div>
+                    <!--Slider-->
+
+                    <!--/Slider-->
+
+                    <div class="row c1_list">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="item item_A" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                <div class="c1_img"><img src="images/tel.png" class="img-responsive"></div>
+                                <div class="c1_titleText">所属类型</div>
+                                <div class="c1_desc">
+                                    中餐馆
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="item item_A" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                <div class="c1_img"><img src="images/map.png" class="img-responsive"></div>
+                                <div class="c1_titleText">店铺地址</div>
+                                <div class="c1_desc">
+                                    浙江省台州市温岭市东门北路198号
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="item item_A" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                <div class="c1_img"><img src="images/phone.png" class="img-responsive"></div>
+                                <div class="c1_titleText">预约电话</div>
+                                <div class="c1_desc">
+                                    0576-86740959
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/店2.gif" alt="2" width="100%">
+                    </div>
+                    <div class="row c1_list">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="item item_A" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                <div class="c1_img"><img src="images/tel.png" class="img-responsive"></div>
+                                <div class="c1_titleText">所属类型</div>
+                                <div class="c1_desc">
+                                    中餐馆
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="item item_A" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                <div class="c1_img"><img src="images/map.png" class="img-responsive"></div>
+                                <div class="c1_titleText">店铺地址</div>
+                                <div class="c1_desc">
+                                    椒江区市府大道535号第一时间生活广场109号商铺
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="item item_A" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                <div class="c1_img"><img src="images/phone.png" class="img-responsive"></div>
+                                <div class="c1_titleText">预约电话</div>
+                                <div class="c1_desc">
+                                    13136577444
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="heng_box heng_box_1 heng_box_nobg">
+                        <div class="plan_com clearfix">
+                            <div class="container">
+                                <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                    <h4>今日爆款</h4>
+                                    <div class="en">IN VOGUE</div>
+                                </div>
+                                <div class="Box">
+                                    <div class="content content_pinpai">
+                                        <div class="Box_con Box_con_3 clearfix">
+                                            <span class="btnl btnt" id="btnl3"></span>
+                                            <span class="btnr btnt" id="btnr3"></span>
+                                            <div class="conbox" id="BoxUl3">
+                                                <ul data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                                    <li class="P0 cur">
+                                                        <img src="images/upload/状元糕.gif" class="img-responsive" />
+                                                    </li>
+                                                    <li class="P0">
+                                                        <img src="images/upload/米漾糕.gif" class="img-responsive" />
+                                                    </li>
+                                                    <li class="P0">
+                                                        <img src="images/upload/糟羹.gif" class="img-responsive" />
+                                                    </li>
+                                                    <li class="P0">
+                                                        <img src="images/upload/青团.gif" class="img-responsive" />
+                                                    </li>
+                                                    <li class="P0">
+                                                        <img src="images/upload/豆腐圆.gif" class="img-responsive" />
+                                                    </li>
+                                                    <li class="P0">
+                                                        <img src="images/upload/麦虾.gif" class="img-responsive" />
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--<p class="BoxSwitch" id="BoxSwitch3"><span class=""></span><span class=""></span><span class=""></span><span class="cur"></span><span class=""></span></p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+                                    //滚动元素id，左切换按钮，右切换按钮，切换元素个数id,滚动方式，切换方向，是否自动滚动，滚动距离，滚动时间，滚动间隔，显示个数
+                                    LbMove('BoxUl3', 'btnl3', 'btnr3', 'BoxSwitch3', true, 'left', true, 220, 1096,
+                                        3000, 4);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="heng_box heng_box_2">
+                        <div class="plan_com clearfix">
+                            <div class="container">
+                                <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                    <h4>食客评价</h4>
+                                    <div class="en">EVALUATION</div>
+                                </div>
+                                <div class="row c1_list">
+                                    <!--Slider-->
+                                    <div class="Box">
+                                        <div class="content">
+                                            <div class="banner_re">
+                                                <div class="banner_con">
+                                                    <ul data-sr="move 100px, over .8s,wait .2s, enter bottom">
+
+                                                        <li class="P0">
+                                                            <div class="item_re">
+                                                                <div class="col-md-2 col-sm-2 col-xs-3">
+                                                                    <div class="c1_img"><img
+                                                                            src="images/upload/pro_13.jpg"
+                                                                            class="img-responsive"></div>
+                                                                </div>
+                                                                <div class="col-md-10 col-sm-10 col-xs-9">
+                                                                    <div class="c1_titleText">
+                                                                        张小姐
+                                                                    </div>
+                                                                    <div class="c1_desc">
+                                                                        前几天我还在车上听到这家店来着，今天刚好在在温岭，迟了这碗麦虾果然名不虚传，下次还会带朋友和家人一起来吃。
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <div class="hover_con"></div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        var index = 0;
+                                        var imgnum = $('.banner_re ul li').length;
+                                        var nmun = '';
+
+                                        function selectimg(index) {
+                                            $('.banner_re ul li').eq(index).fadeIn(600).siblings().fadeOut(600);
+                                            $('.hover_con a').eq(index).addClass('active').siblings('a').removeClass(
+                                                'active');
+                                        }
+                                        $('.banner_re .left').click(function () {
+                                            index -= 1;
+                                            if (index < 0) {
+                                                index = imgnum - 1;
+                                            }
+                                            selectimg(index);
+                                        });
+                                        $('.banner_re .right').click(function () {
+                                            index += 1;
+                                            if (index > imgnum - 1) {
+                                                index = 0;
+                                            }
+                                            selectimg(index);
+
+                                        });
+                                        for (var ni = 0; ni < imgnum; ni++) {
+                                            nmun += "<a href='javascript:;'></a>";
+                                        }
+                                        $('.hover_con').html(nmun);
+                                        $('.hover_con a').eq(0).addClass('active');
+
+                                        $('.hover_con a').each(function (i) {
+                                            $(this).click(function () {
+                                                index = i;
+                                                $('.banner_re ul li').eq(i).fadeIn(600).siblings()
+                                                    .fadeOut(600);
+                                                $(this).addClass('active').siblings('a').removeClass(
+                                                    'active');
+                                            });
+                                        });
+                                    </script>
+
+                                    <!--/Slider-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hover_con"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var index = 0;
+            var imgnum = $('.banner_re ul li').length;
+            var nmun = '';
+
+            function selectimg(index) {
+                $('.banner_re ul li').eq(index).fadeIn(600).siblings().fadeOut(600);
+                $('.hover_con a').eq(index).addClass('active').siblings('a').removeClass('active');
+            }
+            $('.banner_re .left').click(function () {
+                index -= 1;
+                if (index < 0) {
+                    index = imgnum - 1;
+                }
+                selectimg(index);
+            });
+            $('.banner_re .right').click(function () {
+                index += 1;
+                if (index > imgnum - 1) {
+                    index = 0;
+                }
+                selectimg(index);
+
+            });
+            for (var ni = 0; ni < imgnum; ni++) {
+                nmun += "<a href='javascript:;'></a>";
+            }
+            $('.hover_con').html(nmun);
+            $('.hover_con a').eq(0).addClass('active');
+
+            $('.hover_con a').each(function (i) {
+                $(this).click(function () {
+                    index = i;
+                    $('.banner_re ul li').eq(i).fadeIn(600).siblings().fadeOut(600);
+                    $(this).addClass('active').siblings('a').removeClass('active');
+                });
+            });
+        </script>
+
+        <!--/Slider-->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!--脚部开始-->
+    <div class="footer">
+        <div class="footer_com clearfix">
+            <div class="col-md-12 col-sm-12 col-xs-12 PB10 hidden-xs">
+                <a href="index.html">首页</a><span>|</span>
+                <a href="文化风情.html">文化风情</a><span>|</span>
+                <a href="山水之间.html">山水之间</a><span>|</span>
+                <a href="美食聚焦.html">美食聚焦</a><span>|</span>
+                <a href="乡土论坛.html">乡土论坛</a>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 PB10 pub_list_bd hidden-xs">
+                <p class="p">
+                    电话:<a href="tel:010-25635698">81234567</a>
+                </p>
+                <p class="p">
+                    手机:<a href="tel:13800138000">17857051451</a>
+                </p>
+                <p class="p">
+                    邮箱:<a href="mailto:83973923872@qq.com">271749920@qq.com</a>
+                </p>
+                <p class="p">
+                    地址：台州市乡土文化研究有限责任公司
+                </p>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                Copyright © 2008-2019 乡土文化工作室. All rights reserved  xCP备16062663号-1 号
+            </div>
+        </div>
+    </div>
+    <div id="tool">
+        <ul class="toollist toollist_gray">
+            <li>
+                <a href="index.html">
+                    <img src="images/f_home.png" alt="">
+                    <p>
+                        首页
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="tel:152-1013-3807">
+                    <img src="images/f_tel.png" alt=""><p>
+                        一键拨号
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2557305457&amp;site=qq&amp;menu=yes">
+                    <img src="images/f_qqs.png" alt=""><p>
+                        QQ咨询
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="sms:15210133807">
+                    <img src="images/f_message.png" alt=""><p>
+                        发送短信
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--脚部结束-->
+    <!--页面动画js代码 开始-->
+    <script>
+        window.sr = new scrollReveal({
+            //reset: true,
+            move: '200px',
+            mobile: true
+        });
+    </script>
+    <!--/页面动画js代码 结束-->
+
+</body>
+
+</html>

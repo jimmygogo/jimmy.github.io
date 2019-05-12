@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Title here -->
+    <title>山水之间</title>
+    <!-- Description, Keywords and Author -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/response.css" />
+    <!-- jQuery -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- Slider JS -->
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="js/Lunbo.js"></script>
+    <!-- Animation JS -->
+    <script type="text/javascript" src="js/scrollReveal.min.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body class="body_bg">
+    <!--头部开始-->
+    <div class="header">
+        <div class="header_topbg"></div>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-navbar row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle navbar-toggle-zdy" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="..."
+                                class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12 P0">
+                    <div class="collapse collapse-zdy navbar-collapse navbar-collapse-zdy navbar-responsive-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index.html">
+                                    <span class="cn">&nbsp;&nbsp;首页&nbsp;&nbsp;</span>
+                                    <span class="en">&nbsp;&nbsp;HOME&nbsp;&nbsp;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="文化风情.html">
+                                    <span class="cn">文化风情</span>
+                                    <span class="en">CULTURE</span>
+                                </a>
+                            </li>
+                            <li class="cur">
+                                <a href="山水之间.html">
+                                    <span class="cn">山水之间</span>
+                                    <span class="en">SCENERY</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="美食聚焦.html">
+                                    <span class="cn">美食聚焦</span>
+                                    <span class="en">DELICACY</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="乡土论坛.html">
+                                    <span class="cn">乡土论坛</span>
+                                    <span class="en">FORUM</span>
+                                </a>
+                            </li>
+                            <a id="login" href="#" class="navsp">注册/登录</a>
+                        </ul>
+                        <div class="search">
+                            <a href="" id="s"><i class="fas fa-search"></i></a>
+                            <input type="text" name="search" id="search">
+                        </div>
+                    </div>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+    <!--/头部结束-->
+    <div id="login1">
+            <p>登录</p>
+            <form action="#"><label for="name">账户：</label><input type="text" name="name" id="name"><br><label
+                    for="password">密码：</label><input type="password" name="password" id="password"></form>
+                    <input type="submit" value="登录" class="back">
+                    <input type="submit" value="返回" class="back">
+                   <a href="#" class="back">忘记密码？</a> 
+                   <br>
+        </div>
+        <script type="text/javascript">
+         $('#login').click(function(){
+           $('#login1').css("display","block");
+        })
+        $('.back').click(function(){
+           $('#login1').css("display","none");
+           alert("登录失败，您确定以游客身份继续吗？");
+        })
+        </script>
+    <!--banner-->
+    <div id="carousel-example-generic" class="carousel carousel-fade">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/山水.gif" class="img-responsive" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <div class="faxian_content">
+
+        <div class="heng_box heng_box_news">
+            <div class="plan_com clearfix">
+                <div class="container">
+                    <div class="row c1_detail">
+
+                        <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                            <h4 id="2">特色景区</h4>
+                            <div class="en">SCENIC SPOT</div>
+                        </div>
+
+                        <ul class="list_ui">
+                            <li>
+                                <div class="plan_cox">
+                                    <div>所在地区：</div>
+                                    <div><a href="" class="cur">台州</a></div>
+                                    <div><a href="">椒江</a></div>
+                                    <div><a href="">黄岩</a></div>
+                                    <div><a href="">天台</a></div>
+                                    <div><a href="" >仙居</a></div>
+                                    <div><a href="">临海</a></div>
+                                    <div><a href="">路桥</a></div>
+                                    <div><a href="">路桥</a></div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="plan_cox">
+                                    <div>景点类型：</div>
+                                    <div><a href="" class="cur">全部</a></div>
+                                    <div><a href="">森林</a></div>
+                                    <div><a href="">山脉</a></div>
+                                    <div><a href="">瀑布</a></div>
+                                    <div><a href="">寺庙</a></div>
+                                    <div><a href="">其他</a></div>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="newslist">
+                            <li data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                <a href="山水.html">
+                                    <span class="ri ri1">
+                                        <i>No.1</i>
+                                    </span>
+                                    <div class="wen_nei">
+                                        <div class="faxian_pic">
+                                            <img src="images/upload/神仙居.gif" alt="1" width="100%">
+                                            <div class="picb">
+                                                神仙居风景区
+                                            </div>
+
+                                        </div>
+                                        <div class="faxian_wenzi">
+                                            <h4>【神仙居】 崇山峻岭，自成一格</h4>
+                                            <p>
+                                                神仙居位于仙居县城西约20公里的白塔镇南境。神仙居引人入胜之处，在于那里的一山一水、一崖一洞、一石一峰都能自成一格，有不类他山，异乎寻常，出
+                                                人意料， 匪夷所思的景观形态。一字蔽之：“奇”。峰奇、山奇、石奇、崖亦奇。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                <a href="山水.html">
+                                    <span class="ri ri2">
+                                        <i>No.2</i>
+                                    </span>
+
+                                    <div class="wen_nei">
+                                        <div class="faxian_pic">
+                                            <img src="images/upload/国清寺.gif" alt="1" width="100%">
+                                            <div class="picb">
+                                                国清寺
+                                            </div>
+
+                                        </div>
+                                        <h4>【国清寺】 天下四绝</h4>
+                                        <p>
+                                                国清寺位于浙江天台城北3公里的地方，和济南灵岩寺、镇江栖霞寺、江陵玉泉寺并称“天下四绝”，是佛教“天台宗”发祥地，也是日本天台宗祖庭。
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                    <a href="山水.html">
+                                        <span class="ri ri2">
+                                            <i>No.2</i>
+                                        </span>
+    
+                                        <div class="wen_nei">
+                                            <div class="faxian_pic">
+                                                <img src="images/upload/天台山.gif" alt="1" width="100%">
+                                                <div class="picb">
+                                                    天台山风景区
+                                                </div>
+    
+                                            </div>
+                                            <h4>【天台山】 东海之滨，深邃厚实</h4>
+                                            <p>
+                                                    天台山蜿蜒于东海之滨，以其绚丽多姿的形貌和深邃厚实的内涵，孕育出华夏文明苑囿中一棵散发着独特芬芳的奇葩，这就是"天台山文化"。与古都文化和其他名山文化不同，她以宗教文化为主体，于唐宋达到高潮，并对日本和朝鲜文化产生了重大影响。
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                        </ul>
+
+                        <!--分页开始-->
+                        <div class="pager ue-clear">
+                            <div class="pagin-list pc col-md-12 col-sm-12 col-xs-12">
+                                <span class="current prev">上一页</span>
+                                <span class="current">1</span>
+                                <a href="javascript:;">2</a>
+                                <a href="javascript:;">3</a>
+                                <a href="javascript:;" class="next">下一页</a>
+                            </div>
+                            <div class="mobile">
+                                <a href="#">查看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/分页结束-->
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="heng_box heng_box_2">
+        <div class="plan_com clearfix">
+            <div class="container">
+                <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                    <h4>游客评价</h4>
+                    <div class="en">EVALUATION</div>
+                </div>
+                <div class="row c1_list">
+                    <!--Slider-->
+                    <div class="Box">
+                        <div class="content">
+                            <div class="banner_re">
+                                <div class="banner_con">
+                                    <ul data-sr="move 100px, over .8s,wait .2s, enter bottom">
+
+                                        <li class="P0">
+                                            <div class="item_re">
+                                                <div class="col-md-2 col-sm-2 col-xs-3">
+                                                    <div class="c1_img"><img src="images/upload/123.png"
+                                                            class="img-responsive"></div>
+                                                </div>
+                                                <div class="col-md-10 col-sm-10 col-xs-9">
+                                                    <div class="c1_titleText">
+                                                        张小姐
+                                                    </div>
+                                                    <div class="c1_desc">
+                                                        最近来走了一圈路桥十里长街，感受到了十足的文化底蕴，参与了好多活动，受到了文化熏陶，买了好多有趣的文创产品，下次还会来玩！
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="P0">
+                                            <div class="item_re">
+                                                <div class="col-md-2 col-sm-2 col-xs-3">
+                                                    <div class="c1_img"><img src="images/upload/中药.gif"
+                                                            class="img-responsive"></div>
+                                                </div>
+                                                <div class="col-md-10 col-sm-10 col-xs-9">
+                                                    <div class="c1_titleText">
+                                                        陈女士
+                                                    </div>
+                                                    <div class="c1_desc">
+                                                        太美了！神仙居引人入胜之处，在于那里的一山一水、一崖一洞、一石一峰都能自成一格，有不类他山，异乎寻常，出
+                                                        人意料， 匪夷所思的景观形态。
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="u left"></div>
+                                <div class="u right"></div>
+
+                            </div>
+                            <div class="hover_con"></div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        var index = 0;
+                        var imgnum = $('.banner_re ul li').length;
+                        var nmun = '';
+
+                        function selectimg(index) {
+                            $('.banner_re ul li').eq(index).fadeIn(600).siblings().fadeOut(600);
+                            $('.hover_con a').eq(index).addClass('active').siblings('a')
+                                .removeClass('active');
+                        }
+                        $('.banner_re .left').click(function () {
+                            index -= 1;
+                            if (index < 0) {
+                                index = imgnum - 1;
+                            }
+                            selectimg(index);
+                        });
+                        $('.banner_re .right').click(function () {
+                            index += 1;
+                            if (index > imgnum - 1) {
+                                index = 0;
+                            }
+                            selectimg(index);
+
+                        });
+                        for (var ni = 0; ni < imgnum; ni++) {
+                            nmun += "<a href='javascript:;'></a>";
+                        }
+                        $('.hover_con').html(nmun);
+                        $('.hover_con a').eq(0).addClass('active');
+
+                        $('.hover_con a').each(function (i) {
+                            $(this).click(function () {
+                                index = i;
+                                $('.banner_re ul li').eq(i).fadeIn(600).siblings()
+                                    .fadeOut(600);
+                                $(this).addClass('active').siblings('a')
+                                    .removeClass('active');
+                            });
+                        });
+                    </script>
+
+                    <!--/Slider-->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+     <!--脚部开始-->
+     <div class="footer">
+        <div class="footer_com clearfix">
+            <div class="col-md-12 col-sm-12 col-xs-12 PB10 hidden-xs">
+                <a href="index.html">首页</a><span>|</span>
+                <a href="文化风情.html">文化风情</a><span>|</span>
+                <a href="山水之间.html">山水之间</a><span>|</span>
+                <a href="美食聚焦.html">美食聚焦</a><span>|</span>
+                <a href="乡土论坛.html">乡土论坛</a>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 PB10 pub_list_bd hidden-xs">
+                <p class="p">
+                    电话:<a href="tel:010-25635698">81234567</a>
+                </p>
+                <p class="p">
+                    手机:<a href="tel:13800138000">17857051451</a>
+                </p>
+                <p class="p">
+                    邮箱:<a href="mailto:83973923872@qq.com">271749920@qq.com</a>
+                </p>
+                <p class="p">
+                    地址：台州市乡土文化研究有限责任公司
+                </p>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                Copyright © 2008-2019 乡土文化工作室. All rights reserved  xCP备16062663号-1 号
+            </div>
+        </div>
+    </div>
+    <div id="tool">
+        <ul class="toollist toollist_gray">
+            <li>
+                <a href="index.html">
+                    <img src="images/f_home.png" alt="">
+                    <p>
+                        首页
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="tel:152-1013-3807">
+                    <img src="images/f_tel.png" alt=""><p>
+                        一键拨号
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2557305457&amp;site=qq&amp;menu=yes">
+                    <img src="images/f_qqs.png" alt=""><p>
+                        QQ咨询
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="sms:15210133807">
+                    <img src="images/f_message.png" alt=""><p>
+                        发送短信
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--脚部结束-->
+    <!--页面动画js代码 开始-->
+    <script>
+        window.sr = new scrollReveal({
+            //reset: true,
+            move: '200px',
+            mobile: true
+        });
+    </script>
+    <!--/页面动画js代码 结束-->
+
+</body>
+
+</html>
