@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>小林水果|后台管理</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="keywords" content="blog, business, clean, clear, cooporate, creative, design web, flat, marketing, minimal, portfolio, shop, shopping, unique">
+    <meta name="author" content="MARTECH | Deer Creative Theme">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom_bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/elegant.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/scroll.css">
+    <link rel="stylesheet" href="../assets/css/icomoon.css">
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css">
+    <link rel="shortcut icon" href="../assets/images/shortcut_logo.png">
+     <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <style>
+        .low a:link {text-decoration:none;color:blue;}
+       .low a:hover {text-decoration:underline;color:red;}
+       .low a:active{text-decoration:none;color:yellow;}
+       .low a:visited {text-decoration:none;color:green;}
+        .mytable {
+ width: 700px;
+ padding: 0;
+ margin: 0 auto;
+}
+th {
+ font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+ color: #4f6b72;
+ border-right: 1px solid #C1DAD7;
+ border-bottom: 1px solid #C1DAD7;
+ border-top: 1px solid #C1DAD7;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ text-align: left;
+ padding: 6px 6px 6px 6px;
+ background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+}
+th.nobg {
+ border-top: 0;
+ border-left: 0;
+ border-right: 1px solid #C1DAD7;
+ background: none;
+}
+td {
+    border-top: 1px solid #C1DAD7;
+     border-left: 1px solid #C1DAD7;
+ border-right: 1px solid #C1DAD7;
+ border-bottom: 1px solid #C1DAD7;
+ background: #fff;
+ font-size:14px;
+ padding: 6px 6px 6px 12px;
+ color: #4f6b72;
+}
+
+td.alt {
+ background: #F5FAFA;
+ color: #797268;
+}
+th.spec {
+ border-left: 1px solid #C1DAD7;
+ border-top: 0;
+ background: #fff url(images/bullet1.gif) no-repeat;
+ font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+th.specalt {
+ border-left: 1px solid #C1DAD7;
+ border-top: 0;
+ background: #f5fafa url(images/bullet2.gif) no-repeat;
+ font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+ color: #797268;
+}
+
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+width: 150px; /* Width of Menu Items */
+border-bottom: 1px solid #ccc;
+}
+ul li {
+position: relative;
+}
+li ul {
+position: absolute;
+left: 149px; /* Set 1px less than menu width */
+top: 0;
+display: none;
+}
+/* Styles for Menu Items */
+ul li a {
+display: block;
+text-decoration: none;
+color: #777;
+background: #fff; /* IE6 Bug */
+padding: 5px;
+border: 1px solid #ccc;
+border-bottom: 0;
+}
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--头--%>
+        <header> 
+        <div class="header-block d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="header-left d-flex flex-column flex-md-row align-items-center">
+                  <p class="d-flex align-items-center"><i class="fas fa-envelope"></i>小林水果 后台管理</p>
+                  <p class="d-flex align-items-center"><i class="fas fa-phone"></i>17145116</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="header-right d-flex flex-column flex-md-row justify-content-md-end justify-content-center align-items-center">
+                 
+                 
+                  <div class="login d-flex"><a href="../Login.aspx"><i class="fas fa-user"></i><asp:Label ID="Login" runat="server" Text="Label"></asp:Label></a></div>
+                     &nbsp&nbsp <div class="low"> <a href="../Login.aspx">转换账号</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="mobile-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="mobile-menu_block d-flex align-items-center"><a class="mobile-menu--control" href="#"><i class="fas fa-bars"></i></a>
+                  <div id="ogami-mobile-menu">
+                    <button class="no-round-btn" id="mobile-menu--closebtn">菜单</button>
+                    <div class="mobile-menu_items">
+                      <ul class="mb-0 d-flex flex-column">
+                        <li class="toggleable"> <a class="menu-item" href="Index.aspx">首页</a><span class="sub-menu--expander"><i class="icon_plus"></i></span>
+                          
+                        </li>
+                        <li class="toggleable"><a class="menu-item active" href="Shop.aspx">商城</a><span class="sub-menu--expander"><i class="icon_plus"></i></span>
+                          
+                        </li>
+                        <li class="toggleable"> <a class="menu-item" href="blog_list_sidebar.html">资讯</a><span class="sub-menu--expander"><i class="icon_plus"></i></span>
+                          
+                        </li>
+                        
+                      </ul>
+                    </div>
+                    <div class="mobile-login">
+                      <a href="Login.aspx">未登录</a>
+                    </div>
+                    <div class="mobile-social"><a href="#"><i class="fab fa-facebook-f"> </i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-invision"> </i></a><a href=""><i class="fab fa-pinterest-p"> </i></a></div>
+                  </div>
+                  <div class="ogamin-mobile-menu_bg"></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mobile-menu_logo text-center d-flex justify-content-center align-items-center"><a href=""><img src="assets/images/logo.png" alt=""></a></div>
+              </div>
+              <div class="col-3">
+                <div class="mobile-product_function d-flex align-items-center justify-content-end"><a class="function-icon icon_heart_alt" href="wishlist.html"></a><a class="function-icon icon_bag_alt" href="shop_cart.html"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </header>
+        <%--旁边--%>
+    <div>
+        <table width="100%">
+           <%-- <asp:Label ID="Name" runat="server" Text="Label"></asp:Label>--%>
+            <tr><td colspan="2" style="background-color:gray"></td></tr>
+            <tr>
+                
+                <td width="25%">
+                   
+
+                </td>
+                <td width="75%">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+
+            </td></tr>
+            <tr><td colspan="2"></td></tr>
+        </table>
+        <div id="object1"
+    style="left: 10; position: absolute; top:100px; z-index: 5; width: 221; height: 293">
+            
+            <ul id="nav">
+                <li><a href="productsAdd.aspx">增加商品</a></li>
+                <li><a href="productsEdit.aspx">管理商品</a></li>
+                <li><a href="OrderEdit.aspx">订单管理</a></li>
+                <li><a href="uploadImg.aspx">上传图片</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>

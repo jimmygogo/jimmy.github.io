@@ -1,0 +1,219 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <title>小林水果</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="keywords" content="blog, business, clean, clear, cooporate, creative, design web, flat, marketing, minimal, portfolio, shop, shopping, unique">
+    <meta name="author" content="MARTECH | Deer Creative Theme">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom_bootstrap.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/elegant.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="shortcut icon" href="assets/images/shortcut_logo.png">
+     <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            if ($("#Login").text() != "未登录")
+                $(".login a").attr("href", "/MyOrder.aspx");
+        })
+
+    </script>
+    <style>
+       .low a:link {text-decoration:none;color:blue;}
+       .low a:hover {text-decoration:underline;color:red;}
+       .low a:active{text-decoration:none;color:yellow;}
+       .low a:visited {text-decoration:none;color:green;}
+       
+        .search-btn {
+                height: 100%;
+    width: 100%;
+    background-color: #88c74a;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-family: 'Cera Pro Bold';
+    border: 2px solid #88c74a;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    display: inline-block;
+        }
+        .search a {
+            color:white;
+            text-align:center;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <div>
+        
+<%--    <div id="main">--%>
+         <header> 
+        <div class="header-block d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="header-left d-flex flex-column flex-md-row align-items-center">
+                  <p class="d-flex align-items-center"><i class="fas fa-envelope"></i>271749920@qq.com</p>
+                  <p class="d-flex align-items-center"><i class="fas fa-phone"></i>+8888888</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="header-right d-flex flex-column flex-md-row justify-content-md-end justify-content-center align-items-center">
+                 
+                 
+                  <div class="login d-flex"><a href="Login.aspx"><i class="fas fa-user"></i><asp:Label ID="Login" runat="server" Text="Label"></asp:Label></a></div>
+                &nbsp&nbsp <div class="low"> <a href="Login.aspx">转换账号</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navigation d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-2"><a class="logo" href="Index.aspx"><img src="assets/images/logo.png" alt=""></a></div>
+              <div class="col-8">
+                <div class="navgition-menu d-flex align-items-center justify-content-center">
+                  <ul class="mb-0">
+                    <li class="toggleable"> <a class="menu-item" href="Index.aspx">首页</a>
+                    </li>
+                    <li class="toggleable"> <a class="menu-item active" href="Shop.aspx">商城</a>
+                     
+                    </li>
+                    <li class="toggleable"><a class="menu-item" href="Blog.aspx">资讯</a>
+                      
+                    </li>
+                   
+                    <li class="toggleable"><a class="menu-item" href="About_us.aspx">关于我们</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="product-function d-flex align-items-center justify-content-end">
+                  <div id="wishlist"><a class="function-icon icon_heart_alt" href="Like.aspx"></a></div>
+                  <div id="cart"><a class="function-icon icon_bag_alt" href="Cart.aspx"><span>购物车:</span><span><asp:Literal ID="cartNum" runat="server"></asp:Literal></span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div id="mobile-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="mobile-menu_block d-flex align-items-center"><a class="mobile-menu--control" href="#"><i class="fas fa-bars"></i></a>
+                  <div id="ogami-mobile-menu">
+                    <button class="no-round-btn" id="mobile-menu--closebtn">菜单</button>
+                    <div class="mobile-menu_items">
+                      <ul class="mb-0 d-flex flex-column">
+                        <li class="toggleable"> <a class="menu-item" href="Index.aspx">首页</a><span class="sub-menu--expander"><i class="icon_plus"></i></span>
+                          
+                        </li>
+                        <li class="toggleable"><a class="menu-item active" href="Shop.aspx">商城</a><span class="sub-menu--expander"><i class="icon_plus"></i></span>
+                          
+                        </li>
+                        <li class="toggleable"> <a class="menu-item" href="blog_list_sidebar.html">资讯</a><span class="sub-menu--expander"><i class="icon_plus"></i></span>
+                          
+                        </li>
+                        
+                      </ul>
+                    </div>
+                    <div class="mobile-login">
+                      <a href="Login.aspx">未登录</a>
+                    </div>
+                    <div class="mobile-social"><a href="#"><i class="fab fa-facebook-f"> </i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-invision"> </i></a><a href=""><i class="fab fa-pinterest-p"> </i></a></div>
+                  </div>
+                  <div class="ogamin-mobile-menu_bg"></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mobile-menu_logo text-center d-flex justify-content-center align-items-center"><a href=""><img src="assets/images/logo.png" alt=""></a></div>
+              </div>
+              <div class="col-3">
+                <div class="mobile-product_function d-flex align-items-center justify-content-end"><a class="function-icon icon_heart_alt" href="wishlist.html"></a><a class="function-icon icon_bag_alt" href="shop_cart.html"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-filter"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-4 col-xl-3 order-2 order-md-1">
+                <div class="department-menu_block">
+                  <div class="department-menu d-flex justify-content-between align-items-center"><i class="fas fa-bars"></i>水果品类<span><i class="arrow_carrot-down"></i></span></div>
+                  <div class="department-dropdown-menu">
+                    <ul>
+                      <li><a href="/Shop.aspx?type=1&page=1"> <i class="icon-1"></i>瓜果类</a></li>
+                      <li><a href="/Shop.aspx?type=2&page=1"> <i class="icon-3"></i>柑桔类</a></li>
+                      <li><a href="/Shop.aspx?type=3&page=1"> <i class="icon-5"></i>热带水果类</a></li>
+                      <li><a href="/Shop.aspx?type=4&page=1"><i class="icon-6"></i>核果类</a></li>
+                      <li><a href="/Shop.aspx?type=5&page=1"><i class="icon-7"></i>浆果类</a></li>
+                      <li><a href="/Shop.aspx?type=6&page=1"> <i class="icon-11"></i>干货类</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-8 col-lg-8 col-xl-9 order-1 order-md-2">
+                <div class="website-search">
+                  <div class="row no-gutters">
+                    <div class="col-0 col-md-0 col-lg-4 col-xl-3">
+                      <div class="filter-search">
+                        <div class="categories-select d-flex align-items-center justify-content-around"><span>商品类别</span><i class="arrow_carrot-down"></i></div>
+                        <div class="categories-select_box">
+                          <ul>
+                             <li><a href="Shop.aspx">水果礼盒</a></li>
+                            <li><a href="/Shop.aspx?type=6&page=1">干货系列</a></li>
+                            <li><a href="/Shop.aspx?type=3&page=1">进口水果</a></li>
+                            <li><a href="Shop.aspx">国产水果</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-8 col-md-8 col-lg-5 col-xl-7">
+                      <div class="search-input">
+                        <input class="no-round-input no-border" type="text" placeholder="输入您想购买的水果">
+                      </div>
+                    </div>
+                    <div class="col-4 col-md-4 col-lg-3 col-xl-2 search">
+                      <a class="no-round-btn search-btn" href="#">搜索</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+        
+    
+</body>
+</html>
